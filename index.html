@@ -4,33 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <header class="navbar">
-        <nav class="navbar_menu">
-            <a class="navbar_menu_link" href="index.html">Home</a>
-            <a class="navbar_menu_link" href="about.html">Sobre mim</a>            
+    
+    <header class="container-menu">
+        <div class="logo">
+            <a href="#">Marcio Souza</a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="menuha">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Marcio Gonzaga, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/marcioggonzaga/"><img src="assets/linkedin.png" alt=""> linkedin</a>                
-                <a class="apresentacao__links__navegacao" href="https://github.com/MarcioSouzaTI"><img src="assets/github.png" alt=""> Github</a>
-                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/marcio.g.desouza/"><img src="assets/instagram.png" alt=""> Instagram</a>
-                <a class="apresentacao__links__navegacao" href="https://twitter.com/marcioggonzaga"><img src="assets/twitter.png" alt=""> Twitter</a>                                
+
+    <main class="container-pagina">
+        <div class="apresentar">
+            <!-- <p>Transforme as suas ideias e projetos em aplicações com um</p>
+            <h1>Desenvolvedor Front-End</h1> -->
+            
+            <div class="titulo">
+                <p class="apresentar-texto">Se você está precisando criar um Blog, site ou loja virtual, nós podemos ajudar! Oferecemos serviços especializados em criação de páginas para tornar sua presença online atraente e funcional.</p>
+                <h1 class="apresentar-titulo">Transforme as suas ideias e projetos em aplicações <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
+                <p class="apresentar-texto">Olá! Sou Marcio Gonzaga, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            </div>
+            <img src="imagens/apresentar.png" alt="">
+        </div>
+        <div class="sobre"></div>
+        <section class="projetos">
+            <h2>PROJETOS</h2>
+            <div class="container-projetos">
+                <div class="img-container">
+                    <div class="card-imagem">
+                        <img class="img" src="imagens/construction.jpg" alt="">
+                        <h2>Landind page 1</h2>
+                        <a href="#">Conheça o projeto</a>
+                    </div>
+                </div>            
+                <div class="img-container">
+                    <div class="card-imagem">
+                        <img class="img" src="imagens/construction.jpg" alt="">
+                        <h2>Landind page 2</h2>
+                        <a href="#">Conheça o projeto</a>
+                    </div>
+                </div>            
+                <div class="img-container">
+                    <div class="card-imagem">
+                        <img class="img" src="imagens/construction.jpg" alt="">
+                        <h2>Landind page 3</h2>
+                        <a href="#">Conheça o projeto</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="assets/imagem.png" alt="Foto de Marcio">        
+           
     </main>
-
     <footer class="rodape">
-        <p>Desenvolvido por Marcio Gonzaga</p>
+        <div></div>
     </footer>
+<script src="scripts/script.js"></script>
 </body>
 </html>

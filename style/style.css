@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    color: #C2834C;
+    font-family: 'Krona One', sans-serif;
+}
+a:hover {
+    color: black;
+}
+h1, h2{
+    text-align: center;
+    font-size: 35px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: normal;
+    padding: 15px;
+    color: #D18D52;
+}
+/* ------------------- Menu de links -------------------- */
+.container-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #041e36;
+    /* border: solid red 5px; */
+    box-shadow: 0px 5px 9px 1px rgb(24, 23, 23);    
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;    
+    margin-right: 250px;
+    padding: 0 0 0 34px;
+}
+.logo a {
+    display: flex;
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;    
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 34px 0 0;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.nav-link {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    transition: 0.5s ease;    
+}
+.menuha {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 42px;
+    height: 5px;
+    border-radius: 2px;
+    margin: 4px auto;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+}
+/* ---------------------- Ajustes e conteúdos da página -------------------- */
+.container-pagina{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+    /* border: solid blue 5px; */
+    height: auto;
+}
+/* ---------------------- Primeiro banner da página --------------------- */
+.apresentar{ 
+    display: flex;   
+    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
+    height: 450px;
+    gap: 10px;
+    /* border: solid red; */
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Krona One', sans-serif;   
+    margin: 40px 30px 10px 20px;
+    width: 65%;    
+}
+.apresentar-texto{
+    /* font-family: 'Krona One', sans-serif; */
+    margin: 30px 20px 10px 30px;
+    color: white;
+}
+.apresentar img{
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    height: 20rem;
+    width: 28rem;
+}
+/* ----------------------- Sobre mim ------------------------ */
+.sobre{
+    background-color: #fdd47a;
+    height: 400px;
+}
+/* ----------------------------- Área dos Projetos ------------------------- */
+.container-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    background: #d1c7b2;
+}
+.container-projetos .img-container {
+    padding: 90px 30px;
+}
+.img{
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.container-projetos .card-imagem{    
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: rgb(248, 234, 169);
+}
+.container-projetos .card-imagem h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #814f20;   
+}
+.card-imagem a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-left: 95px;
+    background-color: #a15a2a;
+    color: #fdd47a;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-imagem a:hover{
+    transition: 0.5s all;
+    background: #886251;
+}
+/* ----------------------- media query ---------------------- */
+@media (max-width:1040px) {
+    .menuha {
+        display: block;
+    }
+    .menuha.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menuha.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menuha.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .navbar {
+        justify-content: flex-end;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: green;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+}
