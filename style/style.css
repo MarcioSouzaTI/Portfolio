@@ -93,7 +93,7 @@ h1, h2{
 .apresentar{ 
     display: flex;   
     background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    height: 450px;
+    height: 620px;
     gap: 10px;
     /* border: solid red; */
 }
@@ -102,7 +102,7 @@ h1, h2{
     flex-direction: column;
     font-family: 'Krona One', sans-serif;   
     margin: 40px 30px 10px 20px;
-    width: 65%;    
+    width: 55%;    
 }
 .apresentar-texto{
     /* font-family: 'Krona One', sans-serif; */
@@ -111,10 +111,10 @@ h1, h2{
 }
 .apresentar img{
     position: absolute;
-    top: 70px;
-    right: 50px;
-    height: 20rem;
-    width: 28rem;
+    top: 120px;
+    right: 100px;
+    height: 25rem;
+    width: 31rem;
 }
 /* ----------------------- Sobre mim ------------------------ */
 .sobre{
