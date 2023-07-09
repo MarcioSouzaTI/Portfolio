@@ -101,12 +101,23 @@ h1, h2{
     display: flex;
     flex-direction: column;
     font-family: 'Krona One', sans-serif;   
-    margin: 40px 30px 10px 20px;
+    margin: 100px 30px 10px 20px;
     width: 55%;    
+}
+.apresentar-titulo{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 0 0 0 17px;
 }
 .apresentar-texto{
     /* font-family: 'Krona One', sans-serif; */
-    margin: 30px 20px 10px 30px;
+    margin: 30px 20px 2px 17px;
+    color: white;
+}
+.apresentar-texto-dev{
+    margin: 5px 20px 2px 17px;
+    font-size: 2rem;
     color: white;
 }
 .apresentar img{
@@ -119,7 +130,7 @@ h1, h2{
 /* ----------------------- Sobre mim ------------------------ */
 .sobre{
     background-color: #fdd47a;
-    height: 400px;
+    height: 620px;
 }
 /* ----------------------------- Área dos Projetos ------------------------- */
 .container-projetos{
@@ -175,6 +186,13 @@ h1, h2{
 .card-imagem a:hover{
     transition: 0.5s all;
     background: #886251;
+}
+/* ----------------------- Área do Rodapé ------------------- */
+.rodape{
+    position: relative;
+    top: 70px;
+    background-color: #004185;
+    height: 120px;
 }
 /* ----------------------- media query ---------------------- */
 @media (max-width:1040px) {
