@@ -159,8 +159,29 @@ h1, h2{
 }
 /* ----------------------- Sobre mim ------------------------ */
 .sobre{
-    background-color: #fdd47a;
-    height: 620px;
+    border: solid red;
+    /* background-color: #fdd47a; */
+    background-image: url(../imagens/paper-2.png);
+    height: 700px;
+}
+/* .sobre-box{
+    border: solid blue;
+} */
+.sobre-titulo{
+    background: #062D52;
+    border: solid #042340;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+}
+.sobre-texto{
+    /* border: solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #75461d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 70px 100px;    
+    
 }
 /* ----------------------------- Área dos Projetos ------------------------- */
 .container-projetos{
