@@ -184,7 +184,7 @@ h1, h2{
     
 }
 /* ----------------------------- Área dos Projetos ------------------------- */
-.container-projetos{
+/* .container-projetos{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -237,6 +237,25 @@ h1, h2{
 .card-imagem a:hover{
     transition: 0.5s all;
     background: #886251;
+} */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(52, 50, 50);
+    height: 800px;
+    align-items: center;    
+}
+.projetos-titulo{
+    background: rgb(65, 63, 63);
+    border: solid black;
+    width: 100%;
+}
+.projetos-box-card{
+    text-align: center;
+    background: white;
+    width: 20%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 /* ----------------------- Área do Rodapé ------------------- */
 .rodape{
