@@ -240,23 +240,55 @@ h1, h2{
 } */
 .projetos{
     display: flex;
-    flex-direction: column;
-    border: solid rgb(52, 50, 50);
-    height: 800px;
-    align-items: center;    
+    flex-direction: column;    
+    position: relative;
+    border: solid rgb(52, 50, 50);    
+       
 }
 .projetos-titulo{
     background: rgb(65, 63, 63);
     border: solid black;
     width: 100%;
 }
-.projetos-box-card{
+.projetos-texto{
     text-align: center;
-    background: white;
-    width: 20%;
-    height: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.projetos-box{
+    display: flex;    
+    border: solid blue;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projetos-box-card{
+    display: block;
+    position: relative;
+    border: solid red;    
+    width: 17%;
+    text-align: center;
+    margin: 70px 70px 0 70px;
+}
+.projetos-box-card a {
+    display: block;
+}
+.projetos-box-card h3{
+    height: 30px;
+}
+.teste{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.projetos-box-card:hover .teste {
+    visibility: visible;
+}
+
 /* ----------------------- Área do Rodapé ------------------- */
 .rodape{
     position: relative;
@@ -265,6 +297,7 @@ h1, h2{
     height: 120px;
 }
 /* ----------------------- media query ---------------------- */
+/* --------------------- Menu Hamburguer -------------------- */
 @media (max-width:1040px) {
     .menuha {
         display: block;
