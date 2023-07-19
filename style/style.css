@@ -134,8 +134,8 @@ h1, h2{
 }
 .contato{
     display: flex;
-    margin: 35px 0 0 20px;
-    gap: 50px;    
+    margin: 45px 0 0 20px;
+    gap: 45px;    
 }
 .contato a{
     display: flex;
@@ -184,60 +184,7 @@ h1, h2{
     
 }
 /* ----------------------------- Área dos Projetos ------------------------- */
-/* .container-projetos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 100vh;
-    background: #d1c7b2;
-}
-.container-projetos .img-container {
-    padding: 90px 30px;
-}
-.img{
-    height: 250px;
-    width: 350px;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-    object-fit: cover;
-    transition: 0.2s linear;
-}
-.img:hover{
-    transform: scale(1.1);
-}
-.container-projetos .card-imagem{    
-    height: 350px;
-    width: 350px;
-    border-radius: 5px;
-    background-color: rgb(248, 234, 169);
-}
-.container-projetos .card-imagem h2{
-    text-align: center;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #814f20;   
-}
-.card-imagem a{
-    display: block;
-    width: 160px;
-    height: 40px;
-    font-size: 12px;
-    line-height: 20px;
-    padding: 10px 5px;
-    margin-top: 15px;
-    margin-left: 95px;
-    background-color: #a15a2a;
-    color: #fdd47a;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.card-imagem a:hover{
-    transition: 0.5s all;
-    background: #886251;
-} */
+
 .projetos{
     display: flex;
     flex-direction: column;    
@@ -252,12 +199,15 @@ h1, h2{
 }
 .projetos-texto{
     text-align: center;
+    height: 150px;
+    margin-top: 30px;
 }
 .projetos-box{
     display: flex;    
     border: solid blue;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 70px;
 }
 .projetos-box-card{
     display: block;
@@ -290,11 +240,31 @@ h1, h2{
 }
 
 /* ----------------------- Área do Rodapé ------------------- */
-.rodape{
+.main-footer{
     position: relative;
     top: 70px;
     background-color: #004185;
-    height: 120px;
+    border: solid red;
+    
+}
+.social-cont{
+    display: flex;
+    border: solid yellow;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
 }
 /* ----------------------- media query ---------------------- */
 /* --------------------- Menu Hamburguer -------------------- */
