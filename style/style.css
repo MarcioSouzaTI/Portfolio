@@ -12,7 +12,7 @@ a {
     font-family: 'Krona One', sans-serif;
 }
 a:hover {
-    color: black;
+    color: white;
 }
 h1, h2{
     text-align: center;
@@ -147,6 +147,10 @@ h1, h2{
     align-items: center;
     color: white;
 }
+.contato a:hover{
+    background-color: red;
+    color: yellow;
+}
 .contato-img{
     width: 30px;
 }
@@ -158,29 +162,35 @@ h1, h2{
     width: 31rem;
 }
 /* ----------------------- Sobre mim ------------------------ */
-.sobre{
-    border: solid red;
-    /* background-color: #fdd47a; */
-    background-image: url(../imagens/paper-2.png);
-    height: 700px;
+.container-sobre{
+    background: #00305c;
+    /* border: solid red; */
+    padding: 10px 20px;
 }
+/* .sobre{
+   border: solid red;    
+   background-image: url(../imagens/paper-2.png);
+    height: 700px;
+} */
 /* .sobre-box{
     border: solid blue;
 } */
 .sobre-titulo{
-    background: #062D52;
-    border: solid #042340;
+    background: #042340;    
     font-family: 'Krona One', sans-serif;
     font-size: 1.5rem;
+    width: 100%;
 }
 .sobre-texto{
     /* border: solid black; */
+    background-image: url(../imagens/paper-2.png);
     font-family: Arial, Helvetica, sans-serif;
     color: #75461d;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 35px;
-    margin: 70px 100px;    
+    /* margin: 70px 100px;     */
+    padding: 50px 100px;
     
 }
 /* ----------------------------- Área dos Projetos ------------------------- */
@@ -189,22 +199,26 @@ h1, h2{
     display: flex;
     flex-direction: column;    
     position: relative;
-    border: solid rgb(52, 50, 50);    
+    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
+    /* border: solid rgb(52, 50, 50); */
        
 }
 .projetos-titulo{
-    background: rgb(65, 63, 63);
-    border: solid black;
+    background: #042340;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    /* border: solid black; */
     width: 100%;
 }
 .projetos-texto{
-    text-align: center;
-    height: 150px;
-    margin-top: 30px;
+    text-align: center;    
+    padding-top: 50px;
+    padding-bottom: 20px;    
+    /* border: solid green; */
 }
 .projetos-box{
     display: flex;    
-    border: solid blue;
+    /* border: solid blue; */
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 70px;
@@ -212,10 +226,11 @@ h1, h2{
 .projetos-box-card{
     display: block;
     position: relative;
-    border: solid red;    
+    /* border: solid red;     */
     width: 17%;
     text-align: center;
     margin: 70px 70px 0 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .projetos-box-card a {
     display: block;
@@ -243,21 +258,25 @@ h1, h2{
 .main-footer{
     position: relative;
     top: 70px;
-    background-color: #004185;
-    border: solid red;
+    background-color: #041e36;
+    /* border: solid red; */
     
 }
 .social-cont{
     display: flex;
-    border: solid yellow;
+    /* border: solid yellow; */
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 70px;
+    gap: 30px;
 }
 .footer-bottom{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
     color: white;
+    /* border: solid ; */
 }
 .designer{
     opacity: 0.7;
