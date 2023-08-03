@@ -35,18 +35,17 @@ h1, h2{
 }
 .logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1.6rem;
     font-weight: 700;    
-    margin-right: 250px;
-    padding: 0 0 0 34px;
+    margin-left: 100px;    
 }
 .logo a {
     display: flex;
-    width: auto;
+    width: 230px;
     height: 50px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .navbar {
@@ -77,7 +76,7 @@ h1, h2{
     height: 5px;
     border-radius: 2px;
     margin: 4px auto;
-    background-color: red;
+    background-color: #C2834C;
     transition: all 0.3s ease-in-out;
 }
 /* ---------------------- Ajustes e conteúdos da página -------------------- */
@@ -167,14 +166,6 @@ h1, h2{
     /* border: solid red; */
     padding: 10px 20px;
 }
-/* .sobre{
-   border: solid red;    
-   background-image: url(../imagens/paper-2.png);
-    height: 700px;
-} */
-/* .sobre-box{
-    border: solid blue;
-} */
 .sobre-titulo{
     background: #042340;    
     font-family: 'Krona One', sans-serif;
@@ -287,7 +278,7 @@ h1, h2{
 }
 /* ----------------------- media query ---------------------- */
 /* --------------------- Menu Hamburguer -------------------- */
-@media (max-width:1040px) {
+@media (max-width:1024px) {
     .menuha {
         display: block;
     }
@@ -305,6 +296,7 @@ h1, h2{
     }
     .navbar {
         justify-content: flex-end;
+        margin-right: 50px;
     }
     .nav-menu {
         position: fixed;
@@ -312,10 +304,10 @@ h1, h2{
         top: 70px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: green;
+        background-color: #041e36;
         text-align: center;
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         transition: 0.3s;
     }
     .nav-item {
@@ -323,5 +315,22 @@ h1, h2{
     }
     .nav-menu.active {
         left: 0;
+    }
+}
+@media (max-width:768px) {
+    .logo {
+        margin-left: 50px;
+    }
+    .navbar {
+        margin-right: 20px;
+    }
+}
+@media (max-width:480px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .navbar{
+        margin-right: 5px;
+        padding: 0 10px 0 0;
     }
 }
