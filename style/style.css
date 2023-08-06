@@ -17,10 +17,14 @@ a:hover {
 h1, h2{
     text-align: center;
     font-size: 35px;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     padding: 15px;
     color: #D18D52;
+}
+p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* ------------------- Menu de links -------------------- */
 .container-menu {
@@ -39,7 +43,7 @@ h1, h2{
     align-items: center;
     font-size: 1.6rem;
     font-weight: 700;    
-    margin-left: 100px;    
+    margin-left: 72px;    
 }
 .logo a {
     display: flex;
@@ -89,76 +93,63 @@ h1, h2{
     height: auto;
 }
 /* ---------------------- Primeiro banner da página --------------------- */
-.apresentar{ 
-    display: flex;   
+.apresentar {
+    display: flex;
+    flex-wrap: wrap;
     background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    height: 620px;
-    gap: 10px;
-    /* border: solid red; */
+    border: solid red 3px;
+    height: 550px;
 }
-.titulo{
-    /* container do título */
+.titulo {
     display: flex;
     flex-direction: column;
-    font-family: 'Krona One', sans-serif;   
-    margin: 100px 30px 10px 84px;
-    width: 45%;    
+    width: 50%;
+    padding-left: 65px;
+    justify-content: space-around;
+    border: solid black 3px;
 }
-.apresentar-titulo{
-    font-size: 1.3rem;
-    font-family: sans-serif;
-    margin: 30px 20px 2px 17px;
-    color: white;
+.apresentar-titulo {
+    width: 150px;
+    border: solid blue;
 }
-.apresentar-nome{
-    /* Marcio Souza */
-    text-align: left;
-    font-size: 3rem;
-    font-weight: 900;
-    padding: 0 0 0 17px;
+.apresentar-nome {
+    display: inline-block;
+    width: 305px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: bold;
+    border: solid yellow;
 }
-.apresentar-texto-dev{
-    /* Desenvolvedor Front End */
-    font-family: sans-serif;
-    font-size: 2.3rem;
-    margin: 0 20px 20px 17px;    
-    color: white;
-}
-.apresentar-texto{
-    font-size: 1.3rem;
-    font-family: sans-serif;
-    line-height: 30px;
-    margin: 30px 20px 2px 17px;
-    color: white;
-}
-.contato{
+.apresentar-texto-dev {
     display: flex;
-    margin: 45px 0 0 20px;
-    gap: 45px;    
+    width: 250px;
+    border: solid red 3px;
 }
-.contato a{
+.nome-base {
     display: flex;
-    border: solid 1px;
-    height: 40px;
-    width: 180px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    flex-direction: column;    
+    width: 450px;
+    gap: 8px;
+    border: solid green;
 }
-.contato a:hover{
-    background-color: red;
-    color: yellow;
+.apresentar-texto {
+
+    border: solid orange;
 }
-.contato-img{
-    width: 30px;
+.contato {
+    border: solid rgb(8, 131, 121) 3px;
 }
-.apresentar-img{
-    position: absolute;
-    top: 120px;
-    right: 100px;
-    height: 25rem;
-    width: 31rem;
+.contato-img {
+    width: 50px;
+    height: 50px;
+}
+.apresentar-img {    
+    border: solid rgb(28, 28, 159);
+    position: relative;
+    left: 80px;
+    top: 30px;
+    width: 27.5rem;
+    height: 26rem;
 }
 /* ----------------------- Sobre mim ------------------------ */
 .container-sobre{
@@ -334,3 +325,5 @@ h1, h2{
         padding: 0 10px 0 0;
     }
 }
+/* ---------------- Primeiro banner ----------------- */
+
