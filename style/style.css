@@ -43,7 +43,7 @@ p {
     align-items: center;
     font-size: 1.6rem;
     font-weight: 700;    
-    margin-left: 72px;    
+    margin-left: 65px;    
 }
 .logo a {
     display: flex;
@@ -55,9 +55,10 @@ p {
 .navbar {
     display: flex;    
     min-height: 70px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 34px 0 0;
+    margin-right: 32px;
 }
 .nav-menu {
     display: flex;
@@ -97,59 +98,80 @@ p {
     display: flex;
     flex-wrap: wrap;
     background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    border: solid red 3px;
+    /* border: solid red 3px; */
     height: 550px;
 }
 .titulo {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 54%;
     padding-left: 65px;
     justify-content: space-around;
-    border: solid black 3px;
+    /* border: solid black 3px; */
 }
 .apresentar-titulo {
     width: 150px;
-    border: solid blue;
+    margin-top: 25px;
+    font-size: 20px;
+    /* border: solid blue; */
 }
 .apresentar-nome {
     display: inline-block;
-    width: 305px;
+    width: 380px;
     padding: 0;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    border: solid yellow;
+    /* border: solid yellow; */
 }
 .apresentar-texto-dev {
     display: flex;
-    width: 250px;
-    border: solid red 3px;
+    width: 380px;
+    font-size: 29px;
+    /* border: solid red 3px; */
 }
 .nome-base {
     display: flex;
     flex-direction: column;    
     width: 450px;
     gap: 8px;
-    border: solid green;
+    /* border: solid green; */
 }
 .apresentar-texto {
-
-    border: solid orange;
+    font-size: 20px;
+    line-height: 34px;
+    /* border: solid orange; */
 }
 .contato {
-    border: solid rgb(8, 131, 121) 3px;
+    display: flex;
+    width: 600px;
+    justify-content: flex-start;
+    gap: 20px;
+    /* border: solid rgb(8, 131, 121) 3px; */
 }
-.contato-img {
-    width: 50px;
+.contato a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: solid;
+    border-image: linear-gradient(90deg, #020024 0%, #090979 35%, #0a68cd 100%);
+    border-image-slice: 1;
+    box-shadow: 3px 3px 5px black;
+    width: 175px;
     height: 50px;
 }
+.contato-img {
+    width: 35px;
+    height: 44px;
+}
 .apresentar-img {    
-    border: solid rgb(28, 28, 159);
+    /* border: solid rgb(28, 28, 159); */
     position: relative;
-    left: 80px;
-    top: 30px;
-    width: 27.5rem;
-    height: 26rem;
+    left: 5px;
+    top: 40px;
+    width: 34rem;
+    height: 30rem;
 }
 /* ----------------------- Sobre mim ------------------------ */
 .container-sobre{
