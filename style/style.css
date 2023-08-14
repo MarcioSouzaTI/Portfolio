@@ -95,19 +95,26 @@ p {
 }
 /* ---------------------- Primeiro banner da página --------------------- */
 .apresentar {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;        
     background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    /* border: solid red 3px; */
     height: 550px;
+    gap: 7px;    
+    /* border: solid red 3px; */
 }
 .titulo {
-    display: flex;
+    display: flex;    
     flex-direction: column;
-    width: 54%;
-    padding-left: 65px;
-    justify-content: space-around;
+    width: 100%;
+    height: 450px;
+    padding-left: 53px;
+    justify-content: space-around;    
     /* border: solid black 3px; */
+}
+.texto-btns {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    /* border: solid rgb(62, 235, 62); */
 }
 .apresentar-titulo {
     width: 150px;
@@ -132,19 +139,21 @@ p {
 .nome-base {
     display: flex;
     flex-direction: column;    
-    width: 450px;
+    /* width: 450px; */
     gap: 8px;
     /* border: solid green; */
 }
 .apresentar-texto {
+    width: 586px;
     font-size: 20px;
     line-height: 34px;
     /* border: solid orange; */
 }
 .contato {
     display: flex;
-    width: 600px;
-    justify-content: flex-start;
+    width: 575px;
+    height: 65px;
+    margin-left: 55px;    
     gap: 20px;
     /* border: solid rgb(8, 131, 121) 3px; */
 }
@@ -155,23 +164,33 @@ p {
     align-items: center;
     gap: 5px;
     border: solid;
+    /* background: #00305c; */
     border-image: linear-gradient(90deg, #020024 0%, #090979 35%, #0a68cd 100%);
     border-image-slice: 1;
     box-shadow: 3px 3px 5px black;
     width: 175px;
     height: 50px;
+    transition: transform 100ms linear;
+}
+.contato a:hover {
+    background-color: #1d5b9e;
+    transform: scale(1.03);
 }
 .contato-img {
     width: 35px;
     height: 44px;
 }
+.apresentar-img-container {
+    display: flex;
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+    /* border: solid aqua; */
+}
 .apresentar-img {    
-    /* border: solid rgb(28, 28, 159); */
-    position: relative;
-    left: 5px;
-    top: 40px;
-    width: 34rem;
-    height: 30rem;
+    /* border: solid rgb(28, 28, 159);     */
+    width: 100%;
+    /* height: 30rem; */
 }
 /* ----------------------- Sobre mim ------------------------ */
 .container-sobre{
@@ -328,6 +347,33 @@ p {
     }
     .nav-menu.active {
         left: 0;
+    }
+    .apresentar {
+        flex-direction: column;
+        height: 790px;
+    }
+    .titulo {
+        height: 290px;
+    }
+    .apresentar-titulo {
+        margin-left: 58px;
+    }
+    .nome-base {
+        flex-direction: initial;
+        padding-left: 50px;
+    }
+    .apresentar-texto-dev {
+        align-items: flex-end;
+    }
+    .apresentar-texto {
+        margin-left: 38px;
+        width: 85%;
+    }
+    .contato {
+        margin-left: 175px;
+    }
+    .apresentar-img-container {
+        margin-left: 230px;
     }
 }
 @media (max-width:768px) {
