@@ -90,16 +90,23 @@ p {
     flex-direction: column;
     position: relative;
     top: 70px;
+    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
     /* border: solid blue 5px; */
     height: auto;
 }
 /* ---------------------- Primeiro banner da página --------------------- */
 .apresentar {
-    display: flex;        
-    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
+    display: flex;    
+    background-image: url(../imagens/apresentar.png);
+    background-size: cover;            
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;    
+    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
     height: 550px;
     gap: 7px;    
-    /* border: solid red 3px; */
+    border: solid red 3px;
 }
 .titulo {
     display: flex;    
@@ -108,19 +115,19 @@ p {
     height: 450px;
     padding-left: 53px;
     justify-content: space-around;    
-    /* border: solid black 3px; */
+    border: solid black 3px;
 }
 .texto-btns {
     display: flex;
     flex-direction: column;    
     justify-content: space-around;
-    /* border: solid rgb(62, 235, 62); */
+    border: solid rgb(62, 235, 62);
 }
 .apresentar-titulo {
     width: 150px;
     margin-top: 25px;
     font-size: 20px;
-    /* border: solid blue; */
+    border: solid blue;
 }
 .apresentar-nome {
     display: inline-block;
@@ -128,26 +135,26 @@ p {
     padding: 0;
     font-size: 50px;
     font-weight: bold;
-    /* border: solid yellow; */
+    border: solid yellow;
 }
 .apresentar-texto-dev {
     display: flex;
     width: 380px;
     font-size: 29px;
-    /* border: solid red 3px; */
+    border: solid red 3px;
 }
 .nome-base {
     display: flex;
     flex-direction: column;    
     /* width: 450px; */
     gap: 8px;
-    /* border: solid green; */
+    border: solid green;
 }
 .apresentar-texto {
     width: 586px;
     font-size: 20px;
     line-height: 34px;
-    /* border: solid orange; */
+    border: solid orange;
 }
 .contato {
     display: flex;
@@ -155,7 +162,7 @@ p {
     height: 65px;
     margin-left: 55px;    
     gap: 20px;
-    /* border: solid rgb(8, 131, 121) 3px; */
+    border: solid rgb(8, 131, 121) 3px;
 }
 .contato a{
     display: flex;
@@ -164,7 +171,7 @@ p {
     align-items: center;
     gap: 5px;
     border: solid;
-    /* background: #00305c; */
+    background: #00305c;
     border-image: linear-gradient(90deg, #020024 0%, #090979 35%, #0a68cd 100%);
     border-image-slice: 1;
     box-shadow: 3px 3px 5px black;
@@ -180,18 +187,17 @@ p {
     width: 35px;
     height: 44px;
 }
-.apresentar-img-container {
+/* .apresentar-img-container {
     display: flex;
     width: 47%;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    /* border: solid aqua; */
-}
-.apresentar-img {    
-    /* border: solid rgb(28, 28, 159);     */
-    width: 100%;
-    /* height: 30rem; */
-}
+    border: solid aqua;
+} */
+/* .apresentar-img {    
+    border: solid rgb(28, 28, 159);
+    width: 100%;    
+} */
 /* ----------------------- Sobre mim ------------------------ */
 .container-sobre{
     background: #00305c;
