@@ -97,72 +97,74 @@ p {
 /* ---------------------- Primeiro banner da página --------------------- */
 .apresentar {
     display: flex;    
-    background-image: url(../imagens/apresentar.png);
-    background-size: cover;            
+    /* background-image: url(../imagens/apresentar.png);
+    background-size: 45%;            
     background-position: right;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;    
+    width: 96%;
+    height: 100vh;*/
     /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
-    height: 550px;
-    gap: 7px;    
-    border: solid red 3px;
+    height: 532px;
+    /* gap: 7px;*/
+    justify-content: space-between;
+    /* border: solid red 3px; */
 }
 .titulo {
     display: flex;    
     flex-direction: column;
     width: 100%;
-    height: 450px;
+    height: 560px;
     padding-left: 53px;
     justify-content: space-around;    
-    border: solid black 3px;
+    /* border: solid black 3px; */
 }
 .texto-btns {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    width: 55%;    
     justify-content: space-around;
-    border: solid rgb(62, 235, 62);
+    /* border: solid rgb(62, 235, 62); */
 }
 .apresentar-titulo {
-    width: 150px;
+    width: auto;
     margin-top: 25px;
-    font-size: 20px;
-    border: solid blue;
+    font-size: 30px;
+    /* border: solid blue; */
 }
 .apresentar-nome {
     display: inline-block;
-    width: 380px;
+    width: 29rem;
     padding: 0;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    border: solid yellow;
+    /* border: solid yellow; */
 }
 .apresentar-texto-dev {
     display: flex;
-    width: 380px;
-    font-size: 29px;
-    border: solid red 3px;
+    width: 29rem;
+    font-size: 36px;
+    /* border: solid red 3px; */
 }
 .nome-base {
     display: flex;
     flex-direction: column;    
     /* width: 450px; */
-    gap: 8px;
-    border: solid green;
+    gap: 10px;
+    /* border: solid green; */
 }
 .apresentar-texto {
-    width: 586px;
+    width: auto;
     font-size: 20px;
     line-height: 34px;
-    border: solid orange;
+    /* border: solid orange; */
 }
 .contato {
     display: flex;
-    width: 575px;
+    /* width: 575px; */
     height: 65px;
     margin-left: 55px;    
-    gap: 20px;
-    border: solid rgb(8, 131, 121) 3px;
+    gap: 30px;
+    /* border: solid rgb(8, 131, 121) 3px; */
 }
 .contato a{
     display: flex;
@@ -187,17 +189,18 @@ p {
     width: 35px;
     height: 44px;
 }
-/* .apresentar-img-container {
+.apresentar-img-container {
     display: flex;
-    width: 47%;
+    width: 40%;
+    margin-right: 50px;
     justify-content: center;    
     align-items: center;
-    border: solid aqua;
-} */
-/* .apresentar-img {    
-    border: solid rgb(28, 28, 159);
+    /* border: solid aqua; */
+}
+.apresentar-img {    
+    /* border: solid rgb(28, 28, 159); */
     width: 100%;    
-} */
+}
 /* ----------------------- Sobre mim ------------------------ */
 .container-sobre{
     background: #00305c;
@@ -315,8 +318,8 @@ p {
     margin: 0px 5px;
 }
 /* ----------------------- media query ---------------------- */
-/* --------------------- Menu Hamburguer -------------------- */
 @media (max-width:1024px) {
+    /* --------------------- Menu Hamburguer -------------------- */
     .menuha {
         display: block;
     }
@@ -354,32 +357,56 @@ p {
     .nav-menu.active {
         left: 0;
     }
+    /* --------------------- Apresentar -------------------- */
     .apresentar {
         flex-direction: column;
-        height: 790px;
+        height: 518px;
+    }
+    .texto-btns {
+        width: 100%;
+        height: 510px;
+    }
+    .apresentar-img-container {
+        display: none;
     }
     .titulo {
-        height: 290px;
+        background-image: url(../imagens/apresentar.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        height: 435px;
+        padding-right: 50px;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .contato {
+        justify-content: center;
+        margin-right: 54px;
+        gap: 50px;
     }
     .apresentar-titulo {
-        margin-left: 58px;
+        font-size: 23px;
+        margin-bottom: 20px;
+        margin-top: 0;
     }
     .nome-base {
         flex-direction: initial;
-        padding-left: 50px;
     }
     .apresentar-texto-dev {
+        font-size: 1.4rem;
         align-items: flex-end;
+        padding-bottom: 4px;
+        color: black;
+        font-weight: bolder;
+    }
+    .apresentar-nome {
+        width: 21rem;        
+        font-size: 45px;
+        font-weight: bolder;
     }
     .apresentar-texto {
-        margin-left: 38px;
-        width: 85%;
-    }
-    .contato {
-        margin-left: 175px;
-    }
-    .apresentar-img-container {
-        margin-left: 230px;
+        color: black;
     }
 }
 @media (max-width:768px) {
