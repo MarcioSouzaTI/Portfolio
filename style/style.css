@@ -24,7 +24,7 @@ h1, h2{
 }
 p {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat;    
 }
 /* ------------------- Menu de links -------------------- */
 .container-menu {
@@ -90,24 +90,24 @@ p {
     flex-direction: column;
     position: relative;
     top: 70px;
-    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    /* border: solid blue 5px; */
+    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
+    border: solid blue 5px;
     height: auto;
 }
 /* ---------------------- Primeiro banner da página --------------------- */
 .apresentar {
     display: flex;    
-    /* background-image: url(../imagens/apresentar.png);
-    background-size: 45%;            
-    background-position: right;
+    background-image: url(../imagens/apresentarback.png);
+    background-size: 100%;            
+    background-position: center;
     background-repeat: no-repeat;
-    width: 96%;
-    height: 100vh;*/
-    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
-    height: 532px;
+    width: 100%;
+    height: 87vh;
+    /* background-image: radial-gradient(circle, #02265c, #002350, #001f43, #001b37, #01172a); */
+    /* height: 532px; */
     /* gap: 7px;*/
     justify-content: space-between;
-    /* border: solid red 3px; */
+    border: solid red 3px;
 }
 .titulo {
     display: flex;    
@@ -115,56 +115,77 @@ p {
     width: 100%;
     height: 560px;
     padding-left: 53px;
-    justify-content: space-around;    
-    /* border: solid black 3px; */
+    justify-content: center;
+    gap: 20px;   
+    border: solid rgb(194, 75, 154) 3px;
 }
 .texto-btns {
     display: flex;
     flex-direction: column;
-    width: 55%;    
+    width: 55%;
+    height: auto;    
     justify-content: space-around;
-    /* border: solid rgb(62, 235, 62); */
+    border: solid rgb(62, 235, 62);
 }
 .apresentar-titulo {
-    width: auto;
-    margin-top: 25px;
+    width: auto;    
     font-size: 30px;
-    /* border: solid blue; */
+    border: solid blue;
 }
 .apresentar-nome {
     display: inline-block;
-    width: 29rem;
+    width: 30rem;
     padding: 0;
+    text-align: start;
     font-size: 60px;
-    font-weight: bold;
-    /* border: solid yellow; */
+    font-weight: bold;    
+    text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,      
+                1px -1px 0px #FFF,    
+                1px 0px 0px #FFF;
+    border: solid yellow;
 }
 .apresentar-texto-dev {
     display: flex;
-    width: 29rem;
-    font-size: 36px;
-    /* border: solid red 3px; */
+    width: 30rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+      text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,      
+                1px -1px 0px #FFF,    
+                1px 0px 0px #FFF;
+    border: solid red 3px;
 }
 .nome-base {
     display: flex;
     flex-direction: column;    
     /* width: 450px; */
     gap: 10px;
-    /* border: solid green; */
+    border: solid green;
 }
 .apresentar-texto {
     width: auto;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 34px;
-    /* border: solid orange; */
+    /* color: #000;
+      text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,      
+                1px -1px 0px #FFF,    
+                1px 0px 0px #FFF; */
+    border: solid orange;
 }
 .contato {
     display: flex;
     /* width: 575px; */
     height: 65px;
+    margin-bottom: 35px;
     margin-left: 55px;    
     gap: 30px;
-    /* border: solid rgb(8, 131, 121) 3px; */
+    border: solid rgb(8, 131, 121) 3px;
 }
 .contato a{
     display: flex;
@@ -195,10 +216,10 @@ p {
     margin-right: 50px;
     justify-content: center;    
     align-items: center;
-    /* border: solid aqua; */
+    border: solid aqua;
 }
 .apresentar-img {    
-    /* border: solid rgb(28, 28, 159); */
+    border: solid rgb(28, 28, 159);
     width: 100%;    
 }
 /* ----------------------- Sobre mim ------------------------ */
@@ -372,9 +393,9 @@ p {
     .titulo {
         background-image: url(../imagens/apresentar.png);
         background-repeat: no-repeat;
-        background-size: 50%;
+        background-size: 100%;
         background-position: center;
-        height: 435px;
+        height: auto;
         padding-right: 50px;
         justify-content: center;
         gap: 25px;
@@ -383,6 +404,7 @@ p {
     .contato {
         justify-content: center;
         margin-right: 54px;
+        margin-bottom: 5px;
         gap: 50px;
     }
     .apresentar-titulo {
@@ -390,23 +412,24 @@ p {
         margin-bottom: 20px;
         margin-top: 0;
     }
-    .nome-base {
+    /* .nome-base {
         flex-direction: initial;
-    }
+    } */
     .apresentar-texto-dev {
-        font-size: 1.4rem;
+        font-size: 2.2rem;
         align-items: flex-end;
-        padding-bottom: 4px;
-        color: black;
+        padding-bottom: 1px;
+        /* color: black; */
         font-weight: bolder;
     }
     .apresentar-nome {
-        width: 21rem;        
+        width: 22rem;        
         font-size: 45px;
         font-weight: bolder;
     }
     .apresentar-texto {
-        color: black;
+        font-size: 1.4rem;
+        font-weight: 900;
     }
 }
 @media (max-width:768px) {
