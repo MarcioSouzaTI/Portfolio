@@ -97,13 +97,14 @@ p {
 /* ---------------------- Primeiro banner da página --------------------- */
 .apresentar {
     display: flex;    
-    background-image: url(../imagens/apresentarback.png);
+    /* background-image: url(../imagens/apresentarback.png);
     background-size: 100%;            
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: 100%;
     height: 87vh;
-    /* background-image: radial-gradient(circle, #02265c, #002350, #001f43, #001b37, #01172a); */
+    /* background-image: radial-gradient(circle, #081a36, #061832, #05152d, #031229, #010f25); */
+    background-image: radial-gradient(circle, #041c41, #03183b, #021535, #02112f, #000b29);
     /* height: 532px; */
     /* gap: 7px;*/
     justify-content: space-between;
@@ -391,10 +392,10 @@ p {
         display: none;
     }
     .titulo {
-        background-image: url(../imagens/apresentar.png);
+        /* background-image: url(../imagens/apresentar.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: center;
+        background-position: center; */
         height: auto;
         padding-right: 50px;
         justify-content: center;
@@ -439,6 +440,37 @@ p {
     .navbar {
         margin-right: 20px;
     }
+    /* ------------- Apresentar ---------- */
+    .apresentar-titulo {
+        margin: 0;
+    }
+    .titulo {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .apresentar-texto-dev {
+        width: 24rem;
+        font-size: 1.6rem;
+    }
+    .apresentar-texto {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .contato {
+        height: 50px;
+        margin-left: 30px;
+        gap: 10px;
+    }
+    .contato a {
+        font-size: 10px;
+        width: 110px;
+        height: 38px;
+    }
+    .contato-img {
+        width: 20px;
+        height: 44px;
+    }
+
 }
 @media (max-width:480px) {
     .logo {
