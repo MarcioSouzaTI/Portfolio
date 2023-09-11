@@ -90,8 +90,8 @@ p {
     flex-direction: column;
     position: relative;
     top: 70px;
-    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
-    border: solid blue 5px;
+    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);*/
+    /* border: solid blue 5px; */
     height: auto;
 }
 /* ---------------------- Primeiro banner da página --------------------- */
@@ -108,7 +108,7 @@ p {
     /* height: 532px; */
     /* gap: 7px;*/
     justify-content: space-between;
-    border: solid red 3px;
+    /* border: solid red 3px; */
 }
 .titulo {
     display: flex;    
@@ -118,7 +118,7 @@ p {
     padding-left: 53px;
     justify-content: center;
     gap: 20px;   
-    border: solid rgb(194, 75, 154) 3px;
+    /* border: solid rgb(194, 75, 154) 3px; */
 }
 .texto-btns {
     display: flex;
@@ -126,12 +126,12 @@ p {
     width: 55%;
     height: auto;    
     justify-content: space-around;
-    border: solid rgb(62, 235, 62);
+    /* border: solid rgb(62, 235, 62); */
 }
 .apresentar-titulo {
     width: auto;    
     font-size: 30px;
-    border: solid blue;
+    /* border: solid blue; */
 }
 .apresentar-nome {
     display: inline-block;
@@ -145,7 +145,7 @@ p {
                -1px 1px 0px #FFF,      
                 1px -1px 0px #FFF,    
                 1px 0px 0px #FFF;
-    border: solid yellow;
+    /* border: solid yellow;*/
 }
 .apresentar-texto-dev {
     display: flex;
@@ -158,14 +158,14 @@ p {
                -1px 1px 0px #FFF,      
                 1px -1px 0px #FFF,    
                 1px 0px 0px #FFF;
-    border: solid red 3px;
+    /* border: solid red 3px; */
 }
 .nome-base {
     display: flex;
     flex-direction: column;    
     /* width: 450px; */
     gap: 10px;
-    border: solid green;
+    /* border: solid green; */
 }
 .apresentar-texto {
     width: auto;
@@ -177,7 +177,7 @@ p {
                -1px 1px 0px #FFF,      
                 1px -1px 0px #FFF,    
                 1px 0px 0px #FFF; */
-    border: solid orange;
+    /* border: solid orange; */
 }
 .contato {
     display: flex;
@@ -186,7 +186,7 @@ p {
     margin-bottom: 35px;
     margin-left: 55px;    
     gap: 30px;
-    border: solid rgb(8, 131, 121) 3px;
+    /* border: solid rgb(8, 131, 121) 3px; */
 }
 .contato a{
     display: flex;
@@ -217,10 +217,10 @@ p {
     margin-right: 50px;
     justify-content: center;    
     align-items: center;
-    border: solid aqua;
+    /* border: solid aqua; */
 }
 .apresentar-img {    
-    border: solid rgb(28, 28, 159);
+    /* border: solid rgb(28, 28, 159); */
     width: 100%;    
 }
 /* ----------------------- Sobre mim ------------------------ */
