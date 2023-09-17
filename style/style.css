@@ -432,6 +432,10 @@ p {
         font-size: 1.4rem;
         font-weight: 900;
     }
+    /* ---------- Sobre Mim ------------ */
+    .sobre-texto {
+        padding: 50px 50px;
+    }
 }
 @media (max-width:768px) {
     .logo {
