@@ -284,10 +284,10 @@ p {
 .projetos-box-card{
     display: block;
     position: relative;
-    /* border: solid red;     */
-    width: 17%;
+    /* border: solid red; */
+    width: 20%;
     text-align: center;
-    margin: 70px 70px 0 70px;
+    margin: 50px 50px 0 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .projetos-box-card a {
@@ -440,6 +440,10 @@ p {
     .sobre-texto {
         padding: 30px 20px;
     }
+
+    /* ---------- Projetos ------------- */
+
+
 }
 @media (max-width:768px) {
     .logo {
@@ -479,6 +483,14 @@ p {
         height: 44px;
     }
 
+    /* -------- Sobre Mim --------- */
+
+    /* --------- Projetos --------- */
+
+    .projetos-box-card {
+        width: 30%;
+        margin: 40px 35px 0 35px;
+    }
 }
 @media (max-width:480px) {
     .logo {
@@ -488,6 +500,18 @@ p {
         margin-right: 5px;
         padding: 0 10px 0 0;
     }
+
+    /* ------------- Primeiro banner -------------- */
+
+    /* --------------- Sobre Mim ------------------ */
+
+    /* --------------- Projetos ------------------- */
+
+    .projetos-box-card {
+        width: 60%;
+        margin: 40px 35px 0 35px;
+    }
+    
 }
-/* ---------------- Primeiro banner ----------------- */
+
 
