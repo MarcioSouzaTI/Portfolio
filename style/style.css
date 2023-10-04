@@ -22,6 +22,10 @@ h1, h2{
     padding: 15px;
     color: #D18D52;
 }
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D18D52;
+}
 p {
     color: white;
     font-family: Montserrat;    
@@ -297,6 +301,7 @@ p {
     height: 30px;
 }
 .teste{
+    display: flex;
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -305,8 +310,13 @@ p {
     backdrop-filter: blur(5px);
     height: 100%;
     width: 100%;
+    align-items: center;
     text-align: center;
     padding-top: 30px;
+    border: solid #5b5353 5px;
+    color: #5b5353;
+    font-size: 25px;
+    font-weight: 700;
 }
 .projetos-box-card:hover .teste {
     visibility: visible;
